@@ -2,17 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item : MonoBehaviour
+[CreateAssetMenu(fileName = "NewItem", menuName = "Items/New Item")]
+public class Item : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Sprite sprite;
+    public string description = "";
+    public int value = 0;
 
-    // Update is called once per frame
-    void Update()
+    public List<Effect> effects;
+    public virtual void Use(BattleCharacter useOn)
     {
-        
+        Debug.Log("Used: " + name + " on " + useOn.name);
+
+        foreach (Effect effect in effects)
+        {
+            effect.ApplyTo(useOn);
+        }
     }
 }

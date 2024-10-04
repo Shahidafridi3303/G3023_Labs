@@ -97,9 +97,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 0
-    m_Right: 0
-    m_Top: 0
+    m_Left: 80
+    m_Right: 80
+    m_Top: 80
     m_Bottom: 0
   m_ChildAlignment: 0
   m_StartCorner: 0
@@ -223,6 +223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70d03f84d7792b847b4f98307bc2617f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  character: {fileID: 0}
   itemSlots: []
 --- !u!1001 &296321960560819810
 PrefabInstance:

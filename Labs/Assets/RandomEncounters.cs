@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class RandomEncounters : MonoBehaviour
 {
+    [SerializeField] private GameObject encounter;
+
     Rigidbody2D body;
     public float distanceTravelledSinceLastEncounter = 0;
 
@@ -14,12 +16,16 @@ public class RandomEncounters : MonoBehaviour
 
     void Start()
     {
+        SceneManager.LoadScene("Battle", LoadSceneMode.Additive);
+        encounter = GameObject.Find("BattleCanvas");
+        SceneManager.sceneLoaded += SceneLoadedListener;
         body = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SceneLoadedListener(Scene scene, LoadSceneMode mode)
     {
+        encounter = GameObject.Find("BattleCanvas");
+        encounter.SetActive(false);
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -29,17 +35,18 @@ public class RandomEncounters : MonoBehaviour
             EncounterArea encounterZone = collision.GetComponent<EncounterArea>();
             if (encounterZone != null) // encounter area
             {
-                if (body.velocity.magnitude > 0)
+                if (body.velocity.sqrMagnitude > 0)
                 {
                     distanceTravelledSinceLastEncounter += body.velocity.magnitude * Time.fixedDeltaTime;
 
-                    if (distanceTravelledSinceLastEncounter > minEncounterDistance)
+                    while(distanceTravelledSinceLastEncounter > minEncounterDistance)
                     {
-                        distanceTravelledSinceLastEncounter = 0;
+                        distanceTravelledSinceLastEncounter -= minEncounterDistance;
+
                         if (encounterZone.RollEncounter())
                         {
+                            encounter.SetActive(true);
                             //Debug.Log("Encounter! " + encounterZone.areaName);
-                            SceneManager.LoadScene("Battle", LoadSceneMode.Single);
                         }
                     }
                     

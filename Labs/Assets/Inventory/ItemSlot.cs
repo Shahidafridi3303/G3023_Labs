@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class ItemSlot : MonoBehaviour
 {
+    public Inventory inventory;
     public Inventory owner = null;
     public Item itemInSlot = null;
     public Image ButtonImage;
@@ -44,7 +45,7 @@ public class ItemSlot : MonoBehaviour
     {
         if (itemInSlot != null)
         {
-            itemInSlot.Use(target);
+            itemInSlot.Use(inventory.owner);
         }
     }
 }

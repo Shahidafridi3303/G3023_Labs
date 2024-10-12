@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RandomEncounters : MonoBehaviour
 {
@@ -37,7 +38,8 @@ public class RandomEncounters : MonoBehaviour
                         distanceTravelledSinceLastEncounter = 0;
                         if (encounterZone.RollEncounter())
                         {
-                            Debug.Log("Encounter! " + encounterZone.areaName);
+                            //Debug.Log("Encounter! " + encounterZone.areaName);
+                            SceneManager.LoadScene("Battle", LoadSceneMode.Single);
                         }
                     }
                     

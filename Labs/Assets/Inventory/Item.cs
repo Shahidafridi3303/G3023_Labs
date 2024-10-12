@@ -10,13 +10,13 @@ public class Item : ScriptableObject
     public int value = 0;
     public List<Effect> effects;
 
-    public virtual void Use(BattleCharacter target) //(BattleCharacter useOn)
+    public virtual void Use(BattleCharacter target)
     {
-        Debug.Log("Used: " + name + " " + description);
+        Debug.Log("Used: " + name + " on " + target.name + "\n" + description);
 
-        //foreach (Effect effect in effects)
-        //{
-        //    effect.ApplyTo(useOn);
-        //}
+        foreach (Effect effect in effects)
+        {
+            effect.ApplyTo(target, target);
+        }
     }
 }

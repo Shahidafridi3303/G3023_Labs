@@ -4,19 +4,29 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    public BattleCharacter character;
-    public List<ItemSlot> itemSlots;
+    public BattleCharacter owner;
+    public List<ItemSlot> slots = new List<ItemSlot>();
+
+    private void OnValidate()
+    {
+        UpdateSlotList();
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        itemSlots = new List<ItemSlot>();
-        ItemSlot[] slots = GetComponentsInChildren<ItemSlot>();
-        itemSlots.AddRange(slots);
+        UpdateSlotList();
+    }
+
+    void UpdateSlotList()
+    {
+        slots = new List<ItemSlot>();
+        ItemSlot[] childSlots = GetComponentsInChildren<ItemSlot>();
+        slots.AddRange(childSlots);
 
         foreach (ItemSlot slot in slots)
         {
-            slot.owner = this;
+            slot.inventory = this;
         }
     }
 

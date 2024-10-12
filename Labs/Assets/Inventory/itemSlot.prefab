@@ -356,6 +356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a3f16a96df707d4e8672cbe98c49889, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventory: {fileID: 0}
   owner: {fileID: 0}
   itemInSlot: {fileID: 0}
   ButtonImage: {fileID: 5749996804901851334}

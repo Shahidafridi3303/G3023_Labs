@@ -43,8 +43,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -145, y: -10.657111}
-  m_SizeDelta: {x: 977.5359, y: 254.38489}
+  m_AnchoredPosition: {x: -146.43892, y: 12.65243}
+  m_SizeDelta: {x: 1170.6057, y: 302.14648}
   m_Pivot: {x: 0.5, y: 0.4880417}
 --- !u!222 &3095655021126555112
 CanvasRenderer:
@@ -97,9 +97,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 0
+    m_Left: 97
     m_Right: 0
-    m_Top: 0
+    m_Top: 52
     m_Bottom: 0
   m_ChildAlignment: 0
   m_StartCorner: 0
@@ -223,6 +223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70d03f84d7792b847b4f98307bc2617f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  character: {fileID: 0}
   itemSlots: []
 --- !u!1001 &296321960560819810
 PrefabInstance:

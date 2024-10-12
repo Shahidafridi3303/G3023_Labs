@@ -9,4 +9,9 @@ public class BattleCharacter : MonoBehaviour
     {
         HitPoints -= attackValue;
     }
+
+    public void TakeHealing(int healValue)
+    {
+        HitPoints += healValue;
+    }
 }

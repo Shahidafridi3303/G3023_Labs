@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 using UnityEngine.UI;
@@ -8,41 +9,42 @@ public class ItemSlot : MonoBehaviour
 {
     public Inventory owner = null;
     public Item itemInSlot = null;
-    public Image itemIcon;
+    public Image ButtonImage;
+    public TextMeshProUGUI itemText;
 
-#if UNITY_EDITOR
-    //Called in editor when things change on this object
+//#if UNITY_EDITOR
+    //Called in editor when things change on this object //
     public void OnValidate()
     {
-        //CheckSlot();
+        Refresh();
     }
-#endif
-    public void CheckSlot()
+//#endif
+    public void Refresh()
     {
         if (itemInSlot != null)
         {
-            itemIcon.sprite = itemInSlot.sprite;
-            itemIcon.gameObject.SetActive(true);
+            ButtonImage.sprite = itemInSlot.sprite;
+            itemText.text = itemInSlot.name;
+            ButtonImage.gameObject.SetActive(true);
         }
         else
         {
-            itemIcon.sprite = null;
-            itemIcon.gameObject.SetActive(false);
+            ButtonImage.sprite = null;
+            itemText.text = "";
+            ButtonImage.gameObject.SetActive(false);
         }
     }
 
     public void Update()
     {
-        CheckSlot();
-    }
-
-    public void UseItemInSlot()
-    {
-        itemInSlot.Use(owner.character);
+        Refresh();
     }
 
     public void UseItemInSlot(BattleCharacter target)
     {
-        itemInSlot.Use(target);
+        if (itemInSlot != null)
+        {
+            itemInSlot.Use(target);
+        }
     }
 }

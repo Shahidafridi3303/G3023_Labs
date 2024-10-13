@@ -5,7 +5,7 @@ public class HPModifier : Effect
 {
     public int attackValue = 1;
 
-    public override void ApplyTo(BattleCharacter caster, BattleCharacter target)
+    public override void Apply(BattleCharacter caster, BattleCharacter target)
     {
         target.TakeAttack(attackValue);
     }

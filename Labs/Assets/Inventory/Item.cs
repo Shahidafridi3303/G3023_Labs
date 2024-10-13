@@ -16,7 +16,7 @@ public class Item : ScriptableObject
 
         foreach (Effect effect in effects)
         {
-            effect.ApplyTo(target, target);
+            effect.Apply(target, target);
         }
     }
 }

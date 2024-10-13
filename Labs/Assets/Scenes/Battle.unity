@@ -797,6 +797,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3dc57501ca7d941af55f558f29f42b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defense: 1
+  strength: 0
+  dexterity: 0
+  intelligence: 0
 --- !u!114 &1822121326 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1455892549371912154, guid: d7b359e9a7dd46344b0d9ed772db9552, type: 3}
@@ -932,6 +936,10 @@ PrefabInstance:
       propertyPath: itemInSlot
       value: 
       objectReference: {fileID: 11400000, guid: 22bdc3de046b5d24884362087a1b5de7, type: 2}
+    - target: {fileID: 1145509748039623756, guid: d7b359e9a7dd46344b0d9ed772db9552, type: 3}
+      propertyPath: m_text
+      value: Button
+      objectReference: {fileID: 0}
     - target: {fileID: 1265846093717879077, guid: d7b359e9a7dd46344b0d9ed772db9552, type: 3}
       propertyPath: m_Pivot.x
       value: 0

@@ -255,7 +255,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -2856432422834341264}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ItemSlot, Assembly-CSharp
         m_MethodName: UseItemInSlot
         m_Mode: 2
@@ -278,7 +278,6 @@ GameObject:
   - component: {fileID: 6017553247667291576}
   - component: {fileID: 3939487171758545274}
   - component: {fileID: 1946147614912337132}
-  - component: {fileID: -2856432422834341264}
   m_Layer: 5
   m_Name: itemSlot
   m_TagString: Untagged
@@ -344,20 +343,3 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &-2856432422834341264
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8301452997379619131}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a3f16a96df707d4e8672cbe98c49889, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventory: {fileID: 0}
-  owner: {fileID: 0}
-  itemInSlot: {fileID: 0}
-  ButtonImage: {fileID: 5749996804901851334}
-  itemText: {fileID: 7568149650794064725}

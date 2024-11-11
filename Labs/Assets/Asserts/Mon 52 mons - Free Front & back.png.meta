@@ -1,0 +1,1412 @@
+fileFormatVersion: 2
+guid: 1c2e5fab20f55d747b9390fe4b6fe639
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 15
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 64
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdae3c7954e584441b2182ed5d63879e
+      internalID: -1246788334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_1
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 64
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 761a9008e19620d4aadf2dc0a966f2a0
+      internalID: 662670293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_2
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 64
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59184b1416f97a84d8445e9494ffc60d
+      internalID: 1869851088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_3
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 64
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a52170ff29a9ec45a22c8a6f2c07fd5
+      internalID: -980020670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_4
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 64
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73a062113733b8449a55118b013e6427
+      internalID: 391643437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_5
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 64
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b6c8e601ddf7ee4ea86287da7cdd952
+      internalID: 72129927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_6
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 64
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba720da7f52aa65469d5282be465ae39
+      internalID: -1313005920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_7
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 64
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52abaca20048c9c46a01a90597360b79
+      internalID: 216362166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_8
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 64
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 133485a40efb0874daf13a5cc310247c
+      internalID: 566019448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_9
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 64
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09d741cb794c8b547b3bd151f0eb9847
+      internalID: 701031731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_10
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 64
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c76143f5c1bd2434aa5deaa5f4619b8e
+      internalID: -202637763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_11
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 64
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dab25f741a06024181619ba26f354f1
+      internalID: 1963847685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_12
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 64
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed328608416a96d4f81ef40fbec86480
+      internalID: -433370102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_13
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 64
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 201be47745893c946b0f6ffa0f135eb7
+      internalID: -1818717520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_14
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 64
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7878778ea2e424385bad78f72b1912
+      internalID: 86636723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_15
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 64
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4eda98169a15c445a979026278b97eb
+      internalID: 102434476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_16
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 64
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f95818cfc12b31942a09a295925f994e
+      internalID: -1393739452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_17
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 64
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec64e0b7c0ba05d4ab4c1701b28ea09c
+      internalID: 938958275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_18
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 64
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1464da6770e6eba4d8ebaa2bf6ce2811
+      internalID: 1962626156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_19
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 64
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a60e3b792301c4e9f435c697c0dc84
+      internalID: -1383572954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_20
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 64
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8839186c6b0f894db204d0517c6bc5c
+      internalID: -1533784265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_21
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 64
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afc83599f6624604aabc1dcbd55cd36a
+      internalID: -1878423510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_22
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 64
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad143b06f184489419b484d417dc3f8b
+      internalID: -479425495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_23
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 32
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ad44b7df6c8d8b4a8812c1fa79a249d
+      internalID: 811124743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_24
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 32
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd03e0cbaaea5942b1ebf10b09ca57c
+      internalID: -869889918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_25
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 32
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f92b194a67945934cb984d554df73391
+      internalID: 1215508397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_26
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 32
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f3f12e72741772408ddba060686f78a
+      internalID: -1986197247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60623d9a96ce860418070e6306ea32a8
+      internalID: -506864430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_28
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 32
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7de5cb6baa630c04cbc979988476b70c
+      internalID: -1483267339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_29
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 32
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77583630709a0c7418e624c709d81430
+      internalID: 1972683753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_30
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 32
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce26142affbd5794ea0d9b712fb295e8
+      internalID: 737371655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_31
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 32
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cecf927caacb66e448dc8d9ab44bca81
+      internalID: 458216793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_32
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 32
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61b88eb874a51814f9f3fef69d1f69b3
+      internalID: 1941572875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_33
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6875f59784d16eb4f9893961d04c2762
+      internalID: -1625726064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_34
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 32
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37149603c962dd647981fded94b711de
+      internalID: -1860995023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_35
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 32
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a67db6178772ee4e9431ffe6441d1b7
+      internalID: -423549952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_36
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 32
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54b1953fb23cea747ae9110d18b2a19d
+      internalID: 2071264704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_37
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 32
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3bc2a118653b2d468ed292060b3b027
+      internalID: -830909501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_38
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 32
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f2850763660c242926364b72d45576
+      internalID: -681997792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_39
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 32
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fee904eda85e81468404c5eb0cc37e8
+      internalID: 1934008860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_40
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 32
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0df1863efdaf514293d0f9dd2ff1e1a
+      internalID: 169435237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_41
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 32
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 033486cb7cc78f5448db488232b7bf31
+      internalID: 1566024864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_42
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 32
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff45f07ec19c3ac4e8ff6df9d868e0ba
+      internalID: 1918520260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_43
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 32
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 159407324a13a3746a7ecec0ba5bd8d5
+      internalID: 418862028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_44
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 32
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5b222527007270468f7986dba63b062
+      internalID: 454939275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_45
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 32
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e3cf5da4d9922249848aaed685e03c3
+      internalID: -491643490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_46
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 32
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8ab980a9e3fc540a01e560089bd327
+      internalID: 814870899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_47
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 0
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adbcdd92374ceda47a5b80015a99054f
+      internalID: -1777939737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_48
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 0
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ad78a19ed6d8d4cb26fceb928dd9a5
+      internalID: 366794203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_49
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 0
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ad84a90ad26e0340af32fd7132bc8cb
+      internalID: 1007428066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_50
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 0
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a058aaec3531f845b68e76d95dd7301
+      internalID: 670031377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_51
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 0
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d577ed44ba6fabf4cabd63c600be4fde
+      internalID: 265930766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_52
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 0
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a4d82192383b044d8360f9a18595859
+      internalID: -1076173049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_53
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 0
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 853b2bdbea5974142bf3782a413d1129
+      internalID: 475243112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_54
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 0
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 449626cb6e3e8884f8e56063aff33e2f
+      internalID: 1403771867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_55
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 0
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daa3d51c0fe24964c9c08e50382445d3
+      internalID: 690861862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_56
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 0
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 413651ab6528d0d4d93daa9526f41dd3
+      internalID: -77736791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_57
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 0
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d73b18dcde62b4942bf9895a6e953aff
+      internalID: -1483346184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mon 52 mons - Free Front & back_58
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 0
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dbc1dcb7184695448963b1e7de5dea0
+      internalID: 127971904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Mon 52 mons - Free Front & back_0: -1246788334
+      Mon 52 mons - Free Front & back_1: 662670293
+      Mon 52 mons - Free Front & back_10: -202637763
+      Mon 52 mons - Free Front & back_11: 1963847685
+      Mon 52 mons - Free Front & back_12: -433370102
+      Mon 52 mons - Free Front & back_13: -1818717520
+      Mon 52 mons - Free Front & back_14: 86636723
+      Mon 52 mons - Free Front & back_15: 102434476
+      Mon 52 mons - Free Front & back_16: -1393739452
+      Mon 52 mons - Free Front & back_17: 938958275
+      Mon 52 mons - Free Front & back_18: 1962626156
+      Mon 52 mons - Free Front & back_19: -1383572954
+      Mon 52 mons - Free Front & back_2: 1869851088
+      Mon 52 mons - Free Front & back_20: -1533784265
+      Mon 52 mons - Free Front & back_21: -1878423510
+      Mon 52 mons - Free Front & back_22: -479425495
+      Mon 52 mons - Free Front & back_23: 811124743
+      Mon 52 mons - Free Front & back_24: -869889918
+      Mon 52 mons - Free Front & back_25: 1215508397
+      Mon 52 mons - Free Front & back_26: -1986197247
+      Mon 52 mons - Free Front & back_27: -506864430
+      Mon 52 mons - Free Front & back_28: -1483267339
+      Mon 52 mons - Free Front & back_29: 1972683753
+      Mon 52 mons - Free Front & back_3: -980020670
+      Mon 52 mons - Free Front & back_30: 737371655
+      Mon 52 mons - Free Front & back_31: 458216793
+      Mon 52 mons - Free Front & back_32: 1941572875
+      Mon 52 mons - Free Front & back_33: -1625726064
+      Mon 52 mons - Free Front & back_34: -1860995023
+      Mon 52 mons - Free Front & back_35: -423549952
+      Mon 52 mons - Free Front & back_36: 2071264704
+      Mon 52 mons - Free Front & back_37: -830909501
+      Mon 52 mons - Free Front & back_38: -681997792
+      Mon 52 mons - Free Front & back_39: 1934008860
+      Mon 52 mons - Free Front & back_4: 391643437
+      Mon 52 mons - Free Front & back_40: 169435237
+      Mon 52 mons - Free Front & back_41: 1566024864
+      Mon 52 mons - Free Front & back_42: 1918520260
+      Mon 52 mons - Free Front & back_43: 418862028
+      Mon 52 mons - Free Front & back_44: 454939275
+      Mon 52 mons - Free Front & back_45: -491643490
+      Mon 52 mons - Free Front & back_46: 814870899
+      Mon 52 mons - Free Front & back_47: -1777939737
+      Mon 52 mons - Free Front & back_48: 366794203
+      Mon 52 mons - Free Front & back_49: 1007428066
+      Mon 52 mons - Free Front & back_5: 72129927
+      Mon 52 mons - Free Front & back_50: 670031377
+      Mon 52 mons - Free Front & back_51: 265930766
+      Mon 52 mons - Free Front & back_52: -1076173049
+      Mon 52 mons - Free Front & back_53: 475243112
+      Mon 52 mons - Free Front & back_54: 1403771867
+      Mon 52 mons - Free Front & back_55: 690861862
+      Mon 52 mons - Free Front & back_56: -77736791
+      Mon 52 mons - Free Front & back_57: -1483346184
+      Mon 52 mons - Free Front & back_58: 127971904
+      Mon 52 mons - Free Front & back_6: -1313005920
+      Mon 52 mons - Free Front & back_7: 216362166
+      Mon 52 mons - Free Front & back_8: 566019448
+      Mon 52 mons - Free Front & back_9: 701031731
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

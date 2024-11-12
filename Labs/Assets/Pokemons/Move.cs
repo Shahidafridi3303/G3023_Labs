@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class Move : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public MoveBase Base { get; set; }
+    public int PP { get; set; }
 
-    // Update is called once per frame
-    void Update()
+    public Move(MoveBase pBase, int pp)
     {
-        
+        Base = pBase;
+        PP = pBase.PP;
     }
 }

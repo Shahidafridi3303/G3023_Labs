@@ -7,8 +7,7 @@ public class PokemonBase : ScriptableObject
 {
     [SerializeField] private string name;
 
-    [TextArea]
-    [SerializeField] string description;
+    [TextArea][SerializeField] string description;
 
     [SerializeField] Sprite frontSprite;
     [SerializeField] Sprite backSprite;
@@ -23,8 +22,20 @@ public class PokemonBase : ScriptableObject
     [SerializeField] int spAttack;
     [SerializeField] int spDefense;
     [SerializeField] int speed;
-}
 
+    public string Name => name;
+    public string Description => description;
+    public Sprite FrontSprite => frontSprite;
+    public Sprite BackSprite => backSprite;
+    public PokemonType Type1 => type1;
+    public PokemonType Type2 => type2;
+    public int MaxHp => maxHp;
+    public int Attack => attack;
+    public int Defense => defense;
+    public int SpAttack => spAttack;
+    public int SpDefense => spDefense;
+    public int Speed => speed;
+}
 
 public enum PokemonType
 {

@@ -5,10 +5,11 @@ using UnityEngine;
 
 public class BattleSystem : MonoBehaviour
 {
-    [SerializeField] private BattleUnit playerUnit;
-    [SerializeField] private BattleUnit enemyUnit;
-    [SerializeField] private BattleHud playerHud;
-    [SerializeField] private BattleHud enemyHud;
+    [SerializeField] BattleUnit playerUnit;
+    [SerializeField] BattleUnit enemyUnit;
+    [SerializeField] BattleHud playerHud;
+    [SerializeField] BattleHud enemyHud;
+    [SerializeField] BattleDialogBox dialogBox;
 
     private void Start()
     {
@@ -21,5 +22,7 @@ public class BattleSystem : MonoBehaviour
         enemyUnit.Setup();
         playerHud.SetData(playerUnit.Pokemon);
         enemyHud.SetData(enemyUnit.Pokemon);
+
+        StartCoroutine(dialogBox.TypeDialog($"A wild {playerUnit.Pokemon.Base.Name} appeared."));
     }
 }

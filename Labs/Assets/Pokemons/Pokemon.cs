@@ -21,9 +21,9 @@ public class Pokemon
         foreach (var move in Base.LearnableMoves)
         {
             if (move.Level <= Level)
-                //Moves.Add(new Move(move.MoveBase));
+                Moves.Add(new Move(move.MoveBase));
 
-            if (Moves.Count >= 4)
+            if (Moves.Count >= 4) 
                 break;
         }
     }
@@ -55,6 +55,6 @@ public class Pokemon
 
     public int MaxHp
     {
-        get { return Mathf.FloorToInt((Base.MaxHp * Level) / 100f) + 10; }
+        get { return Mathf.FloorToInt((Base.Speed * Level) / 100f) + 10; }
     }
 }

@@ -26,9 +26,10 @@ public class Movement : MonoBehaviour
         Vector3 velocity = inputVector * moveSpeed;
 
         rb.velocity = velocity;
-
-        //transform.position = transform.position + velocity * Time.deltaTime;
     }
 
-    
+    public void SetVelocityZero()
+    {
+        rb.velocity = Vector3.zero;
+    }
 }

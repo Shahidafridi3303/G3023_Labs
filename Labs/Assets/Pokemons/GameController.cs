@@ -23,6 +23,7 @@ public class GameController : MonoBehaviour
     private void StartBattle()
     {
         state = GameState.Battle;
+        playerController.SetVelocityZero();    // set player speed 0;
         battleSystem.gameObject.SetActive(true);
         worldCamera.gameObject.SetActive(false);
 

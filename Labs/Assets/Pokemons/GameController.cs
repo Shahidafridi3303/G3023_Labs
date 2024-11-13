@@ -23,11 +23,14 @@ public class GameController : MonoBehaviour
     private void StartBattle()
     {
         state = GameState.Battle;
-        playerController.SetVelocityZero();    // set player speed 0;
+        playerController.SetVelocityZero();   
         battleSystem.gameObject.SetActive(true);
         worldCamera.gameObject.SetActive(false);
 
-        battleSystem.StartBattle();
+        var playerParty = playerController.GetComponent<PokemonParty>();
+        var wildPokemon = FindObjectOfType<MapArea>().GetComponent<MapArea>().GetRandomWildPokemon();
+
+        battleSystem.StartBattle(playerParty, wildPokemon);
     }
 
     void EndBattle(bool won)

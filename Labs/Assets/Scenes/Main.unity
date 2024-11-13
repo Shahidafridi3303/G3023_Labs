@@ -2549,8 +2549,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63bdffa555f4fb149a45c9728faaee6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _base: {fileID: 11400000, guid: 837fcdf66891e7544bee8974a29c6687, type: 2}
-  level: 5
   isPlayerUnit: 0
 --- !u!1 &975776047
 GameObject:
@@ -3420,6 +3418,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6f402e8a05bc794c8776220d59cd5b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1273789462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273789452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d35a2329e579fc648a0b7e3371b6283a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pokemons:
+  - _base: {fileID: 11400000, guid: 1eee8eb50db44c94f8a3cdd882f2abe7, type: 2}
+    level: 7
+  - _base: {fileID: 11400000, guid: 837fcdf66891e7544bee8974a29c6687, type: 2}
+    level: 3
 --- !u!1 &1277037031
 GameObject:
   m_ObjectHideFlags: 0
@@ -3642,8 +3657,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63bdffa555f4fb149a45c9728faaee6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _base: {fileID: 11400000, guid: 1eee8eb50db44c94f8a3cdd882f2abe7, type: 2}
-  level: 7
   isPlayerUnit: 1
 --- !u!1 &1300790082
 GameObject:
@@ -4584,6 +4597,7 @@ GameObject:
   - component: {fileID: 2007762386}
   - component: {fileID: 2007762385}
   - component: {fileID: 2007762388}
+  - component: {fileID: 2007762389}
   m_Layer: 0
   m_Name: Water
   m_TagString: Untagged
@@ -5009,6 +5023,23 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!114 &2007762389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007762383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be8e3088db27ebe4986e8f7516d125c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wildPokemons:
+  - _base: {fileID: 11400000, guid: 837fcdf66891e7544bee8974a29c6687, type: 2}
+    level: 5
+  - _base: {fileID: 11400000, guid: 837fcdf66891e7544bee8974a29c6687, type: 2}
+    level: 7
 --- !u!1 &2066978867
 GameObject:
   m_ObjectHideFlags: 0
@@ -5402,6 +5433,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6441404278157119419, guid: 66e796416d101d342958e9eefd4c343a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1273789458}
+    - targetCorrespondingSourceObject: {fileID: 6441404278157119419, guid: 66e796416d101d342958e9eefd4c343a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1273789462}
   m_SourcePrefab: {fileID: 100100000, guid: 66e796416d101d342958e9eefd4c343a, type: 3}
 --- !u!1001 &2223885603544505722
 PrefabInstance:

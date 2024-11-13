@@ -8,7 +8,7 @@ public class BattleUnit : MonoBehaviour
     [SerializeField] bool isPlayerUnit;
 
     public Pokemon Pokemon { get; set; }
-
+    
     public void Setup(Pokemon pokemon)
     {
         Pokemon = pokemon;

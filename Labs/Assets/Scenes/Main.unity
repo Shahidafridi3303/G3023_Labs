@@ -658,6 +658,11 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &268595266 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5890384072164936564, guid: c32351babb424564eb5b34b5ed4ed8b9, type: 3}
+  m_PrefabInstance: {fileID: 2223885603544505722}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &279874428
 GameObject:
   m_ObjectHideFlags: 0
@@ -2461,6 +2466,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2055715574485359435, guid: c32351babb424564eb5b34b5ed4ed8b9, type: 3}
   m_PrefabInstance: {fileID: 2223885603544505722}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &877640894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268595266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be8e3088db27ebe4986e8f7516d125c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wildPokemons:
+  - _base: {fileID: 11400000, guid: 837fcdf66891e7544bee8974a29c6687, type: 2}
+    level: 5
+  - _base: {fileID: 11400000, guid: 837fcdf66891e7544bee8974a29c6687, type: 2}
+    level: 7
 --- !u!1 &896233496
 GameObject:
   m_ObjectHideFlags: 0
@@ -4597,7 +4619,6 @@ GameObject:
   - component: {fileID: 2007762386}
   - component: {fileID: 2007762385}
   - component: {fileID: 2007762388}
-  - component: {fileID: 2007762389}
   m_Layer: 0
   m_Name: Water
   m_TagString: Untagged
@@ -5023,23 +5044,6 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
---- !u!114 &2007762389
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2007762383}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be8e3088db27ebe4986e8f7516d125c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wildPokemons:
-  - _base: {fileID: 11400000, guid: 837fcdf66891e7544bee8974a29c6687, type: 2}
-    level: 5
-  - _base: {fileID: 11400000, guid: 837fcdf66891e7544bee8974a29c6687, type: 2}
-    level: 7
 --- !u!1 &2066978867
 GameObject:
   m_ObjectHideFlags: 0
@@ -49323,7 +49327,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2055715574485359435, guid: c32351babb424564eb5b34b5ed4ed8b9, type: 3}
       insertIndex: 1
       addedObject: {fileID: 2007762384}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5890384072164936564, guid: c32351babb424564eb5b34b5ed4ed8b9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 877640894}
   m_SourcePrefab: {fileID: 100100000, guid: c32351babb424564eb5b34b5ed4ed8b9, type: 3}
 --- !u!1001 &6194442629241985292
 PrefabInstance:

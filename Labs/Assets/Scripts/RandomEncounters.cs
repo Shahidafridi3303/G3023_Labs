@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,6 +12,8 @@ public class RandomEncounters : MonoBehaviour
     [Range(0f, 100000f)]
     [SerializeField]
     public float minEncounterDistance = 2;
+
+    public event Action OnEncountered;
 
     void Start()
     {
@@ -35,6 +38,7 @@ public class RandomEncounters : MonoBehaviour
                         if (encounterZone.RollEncounter())
                         {
                             Debug.Log("Encounter! " + encounterZone.areaName);
+                            OnEncountered();
                         }
                     }
                     

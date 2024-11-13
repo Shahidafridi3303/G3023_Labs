@@ -65,7 +65,8 @@ public class BattleSystem : MonoBehaviour
 
         var move = playerUnit.Pokemon.Moves[currentMove];
         move.PP--;
-        yield return dialogBox.TypeDialog($"{playerUnit.Pokemon.Base.Name} used {move.Base.Name}");
+        //yield return dialogBox.TypeDialog($"{playerUnit.Pokemon.Base.Name} used {move.Base.Name}");
+        yield return dialogBox.TypeDialog($"You used {move.Base.Name}");
         yield return new WaitForSeconds(1f);
 
         bool isFainted = enemyUnit.Pokemon.TakeDamage(move, playerUnit.Pokemon);
@@ -103,22 +104,22 @@ public class BattleSystem : MonoBehaviour
 
             yield return new WaitForSeconds(2f);
 
-            var nextPokemon = playerParty.GetHealthyPokemon();
-            if (nextPokemon != null)
-            {
-                playerUnit.Setup(nextPokemon);
-                playerHud.SetData(nextPokemon);
+            //var nextPokemon = playerParty.GetHealthyPokemon();
+            //if (nextPokemon != null)
+            //{
+            //    playerUnit.Setup(nextPokemon);
+            //    playerHud.SetData(nextPokemon);
 
-                dialogBox.SetMoveNames(nextPokemon.Moves);
+            //    dialogBox.SetMoveNames(nextPokemon.Moves);
 
-                yield return dialogBox.TypeDialog($"Go {nextPokemon.Base.name}!");
+            //    yield return dialogBox.TypeDialog($"Go {nextPokemon.Base.name}!");
 
-                PlayerAction();
-            }
-            else
-            {
+            //    PlayerAction();
+            //}
+            //else
+            //{
                 OnBattleOver(false);
-            }
+            //}
         }
         else
         {
@@ -149,11 +150,11 @@ public class BattleSystem : MonoBehaviour
         {
             if (currentAction > 0)
                 --currentAction;
-        } 
+        }
 
         dialogBox.UpdateActionSelection(currentAction);
 
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.Return))
         {
             if (currentAction == 0)
             {
@@ -192,7 +193,7 @@ public class BattleSystem : MonoBehaviour
 
         dialogBox.UpdateMoveSelection(currentMove, playerUnit.Pokemon.Moves[currentMove]);
 
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.Return))
         {
             dialogBox.EnableMoveSelector(false);
             dialogBox.EnableDialogText(true);

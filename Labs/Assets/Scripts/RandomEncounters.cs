@@ -37,7 +37,6 @@ public class RandomEncounters : MonoBehaviour
 
                         if (encounterZone.RollEncounter())
                         {
-                            Debug.Log("Encounter! " + encounterZone.areaName);
                             OnEncountered();
                         }
                     }
@@ -50,11 +49,12 @@ public class RandomEncounters : MonoBehaviour
                 PokemonParty pokemonParty = GetComponent<PokemonParty>();
                 if (pokemonParty != null)
                 {
-                    //pokemonParty.AddPokemon(collision.GetComponent<Pokeball>().GetPokemon());
+                    Pokemon caughtPokemon = pokeball.GetPokemon(); 
+                    pokemonParty.AddPokemon(caughtPokemon);        
+                    Debug.Log("Pokeball Found and Pokemon added");
                 }
 
-                Debug.Log("Pokeball Found");
-                Destroy(collision.gameObject);
+                Destroy(collision.gameObject); 
             }
         }
     }

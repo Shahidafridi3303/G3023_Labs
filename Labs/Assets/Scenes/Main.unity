@@ -3312,7 +3312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemon:
-    _base: {fileID: 11400000, guid: 1eee8eb50db44c94f8a3cdd882f2abe7, type: 2}
+    _base: {fileID: 11400000, guid: b5624f064dc212a40b9ccd4a8a73840b, type: 2}
     level: 5
 --- !u!114 &893027121
 MonoBehaviour:

@@ -8,11 +8,12 @@ public class PartyScreen : MonoBehaviour
     [SerializeField] TextMeshProUGUI messageText;
 
     PartyMemberUI[] memberSlots;
-    List<Pokemon> pokemons;
+    private List<Pokemon> pokemons;
 
     public void Init()
     {
         memberSlots = GetComponentsInChildren<PartyMemberUI>();
+        Debug.Log("1 Total Pokemons: " + memberSlots.Length);
     }
 
     public void SetPartyData(List<Pokemon> pokemons)
@@ -26,55 +27,23 @@ public class PartyScreen : MonoBehaviour
             else
                 memberSlots[i].gameObject.SetActive(false);
         }
+
         messageText.text = "Choose a Pokemon";
 
-        Debug.Log("Total Pokemons: " + pokemons.Count);
+        Debug.Log("2 Total Pokemons: " + pokemons.Count);
     }
+
 
     public void UpdateMemberSelection(int selectedMember)
     {
-        for (int i = 0; i < pokemons.Count; i++)
+        for (int i = 0; i < memberSlots.Length; i++)
         {
-            if (i == selectedMember)
+            if (i < pokemons.Count && i == selectedMember)
                 memberSlots[i].SetSelected(true);
             else
                 memberSlots[i].SetSelected(false);
         }
     }
-
-    //public void SetPartyData(List<Pokemon> pokemons)
-    //{
-    //    this.pokemons = pokemons;
-
-    //    for (int i = 0; i < memberSlots.Length; i++)
-    //    {
-    //        if (i < pokemons.Count)
-    //        {
-    //            memberSlots[i].gameObject.SetActive(true);
-    //            memberSlots[i].SetData(pokemons[i]);
-    //        }
-    //        else
-    //        {
-    //            memberSlots[i].gameObject.SetActive(false);
-    //        }
-    //    }
-    //    messageText.text = "Choose a Pokemon";
-    //}
-
-    //public void UpdateMemberSelection(int selectedMember)
-    //{
-    //    for (int i = 0; i < memberSlots.Length; i++)
-    //    {
-    //        if (i < pokemons.Count) // Check that i is within bounds of pokemons
-    //        {
-    //            memberSlots[i].SetSelected(i == selectedMember);
-    //        }
-    //        else
-    //        {
-    //            memberSlots[i].SetSelected(false); // Deselect any out-of-bounds slots.
-    //        }
-    //    }
-    //}
 
     public void SetMessageText(string message)
     {

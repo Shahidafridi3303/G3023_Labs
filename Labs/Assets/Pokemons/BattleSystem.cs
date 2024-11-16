@@ -240,15 +240,16 @@ public class BattleSystem : MonoBehaviour
     void HandlePartySelection()
     {
         if (Input.GetKeyDown(KeyCode.RightArrow))
-            ++currentMember;
+            currentMember++;
         else if (Input.GetKeyDown(KeyCode.LeftArrow))
-            --currentMember;
+            currentMember--;
         else if (Input.GetKeyDown(KeyCode.DownArrow))
             currentMember += 2;
         else if (Input.GetKeyDown(KeyCode.UpArrow))
             currentMember -= 2;
 
-        currentMember = Mathf.Clamp(currentMember, 0,  playerParty.Pokemons.Count - 1);
+        // Clamp currentMember to ensure it stays within valid bounds
+        currentMember = Mathf.Clamp(currentMember, 0, playerParty.Pokemons.Count - 1);
 
         partyScreen.UpdateMemberSelection(currentMember);
 

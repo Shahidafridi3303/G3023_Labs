@@ -27,6 +27,8 @@ public class PartyScreen : MonoBehaviour
                 memberSlots[i].gameObject.SetActive(false);
         }
         messageText.text = "Choose a Pokemon";
+
+        Debug.Log("Total Pokemons: " + pokemons.Count);
     }
 
     public void UpdateMemberSelection(int selectedMember)

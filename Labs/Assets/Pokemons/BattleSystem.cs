@@ -93,7 +93,7 @@ public class BattleSystem : MonoBehaviour
         else
         {
             // Add enemy Pokemon
-            playerParty.AddPokemon(enemyUnit.Pokemon);
+            // playerParty.AddPokemon(enemyUnit.Pokemon);
 
             StartCoroutine(EnemyMove());
         }

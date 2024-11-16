@@ -26,7 +26,6 @@ public class PartyScreen : MonoBehaviour
             else
                 memberSlots[i].gameObject.SetActive(false);
         }
-
         messageText.text = "Choose a Pokemon";
     }
 
@@ -40,6 +39,40 @@ public class PartyScreen : MonoBehaviour
                 memberSlots[i].SetSelected(false);
         }
     }
+
+    //public void SetPartyData(List<Pokemon> pokemons)
+    //{
+    //    this.pokemons = pokemons;
+
+    //    for (int i = 0; i < memberSlots.Length; i++)
+    //    {
+    //        if (i < pokemons.Count)
+    //        {
+    //            memberSlots[i].gameObject.SetActive(true);
+    //            memberSlots[i].SetData(pokemons[i]);
+    //        }
+    //        else
+    //        {
+    //            memberSlots[i].gameObject.SetActive(false);
+    //        }
+    //    }
+    //    messageText.text = "Choose a Pokemon";
+    //}
+
+    //public void UpdateMemberSelection(int selectedMember)
+    //{
+    //    for (int i = 0; i < memberSlots.Length; i++)
+    //    {
+    //        if (i < pokemons.Count) // Check that i is within bounds of pokemons
+    //        {
+    //            memberSlots[i].SetSelected(i == selectedMember);
+    //        }
+    //        else
+    //        {
+    //            memberSlots[i].SetSelected(false); // Deselect any out-of-bounds slots.
+    //        }
+    //    }
+    //}
 
     public void SetMessageText(string message)
     {

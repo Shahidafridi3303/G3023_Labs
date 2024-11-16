@@ -41,10 +41,21 @@ public class RandomEncounters : MonoBehaviour
                             OnEncountered();
                         }
                     }
-                    
                 }
+            }
+
+            Pokeball pokeball = collision.GetComponent<Pokeball>();
+            if (pokeball != null)
+            {
+                PokemonParty pokemonParty = GetComponent<PokemonParty>();
+                if (pokemonParty != null)
+                {
+                    //pokemonParty.AddPokemon(collision.GetComponent<Pokeball>().GetPokemon());
+                }
+
+                Debug.Log("Pokeball Found");
+                Destroy(collision.gameObject);
             }
         }
     }
 }
-

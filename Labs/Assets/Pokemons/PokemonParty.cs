@@ -32,7 +32,7 @@ public class PokemonParty : MonoBehaviour
 
     public void AddPokemon(Pokemon newPokemon)
     {
-        if (pokemons.Count < 6)
+        if (pokemons.Count < 16)
         {
             pokemons.Add(newPokemon);
             OnPartyUpdated?.Invoke(); // Notify listeners of the update

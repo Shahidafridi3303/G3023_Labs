@@ -280,9 +280,14 @@ public class BattleSystem : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.X))
         {
-            partyScreen.gameObject.SetActive(false);
-            ActionSelection();
+            BackFromMemberSelection();
         }
+    }
+
+    public void BackFromMemberSelection()
+    {
+        partyScreen.gameObject.SetActive(false);
+        ActionSelection();
     }
 
     IEnumerator SwitchPokemon(Pokemon newPokemon)

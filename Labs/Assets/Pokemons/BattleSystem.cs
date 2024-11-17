@@ -60,9 +60,12 @@ public class BattleSystem : MonoBehaviour
     public void OpenPartyScreen()
     {
         state = BattleState.PartyScreen;
+        currentMember = 0; // Reset to the first Pokémon
         partyScreen.SetPartyData(playerParty.Pokemons);
+        partyScreen.UpdateMemberSelection(currentMember); // Ensure selection UI is updated
         partyScreen.gameObject.SetActive(true);
     }
+
 
     public void MoveSelection()
     {
@@ -192,7 +195,8 @@ public class BattleSystem : MonoBehaviour
 
     public void BattleOver()
     {
-        OnBattleOver(false);
+        dialogBox.EnableActionSelector(false);
+        OnBattleOver(true);
     }
 
     private void HandleMoveSelection()
@@ -260,13 +264,13 @@ public class BattleSystem : MonoBehaviour
             var selectedMember = playerParty.Pokemons[currentMember];
             if (selectedMember.HP <= 0)
             {
-                partyScreen.SetMessageText("You can't send out a fainted Pokémon.");
+                partyScreen.SetMessageText("You can't send out a fainted Pokemon.");
                 return;
             }
 
             if (selectedMember == playerUnit.Pokemon)
             {
-                partyScreen.SetMessageText("You can't switch with the same Pokémon.");
+                partyScreen.SetMessageText("You can't switch with the same Pokemon.");
                 return;
             }
 
@@ -280,9 +284,6 @@ public class BattleSystem : MonoBehaviour
             ActionSelection();
         }
     }
-
-
-
 
     IEnumerator SwitchPokemon(Pokemon newPokemon)
     {

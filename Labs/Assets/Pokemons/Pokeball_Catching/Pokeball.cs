@@ -23,7 +23,7 @@ public class Pokeball : MonoBehaviour
     {
         if (pokemon == null)
         {
-            Debug.LogWarning("In Pokéball, Pokémon not assigned");
+            Debug.LogWarning("In Pokeball, Pokemon not assigned");
             return null;
         }
 

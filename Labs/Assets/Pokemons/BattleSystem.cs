@@ -31,7 +31,7 @@ public class BattleSystem : MonoBehaviour
         this.wildPokemon = wildPokemon;
         StartCoroutine(SetupBattle());
     }
-    
+
     private IEnumerator SetupBattle()
     {
         playerUnit.Setup(playerParty.GetHealthyPokemon());
@@ -39,7 +39,7 @@ public class BattleSystem : MonoBehaviour
         playerHud.SetData(playerUnit.Pokemon);
         enemyHud.SetData(enemyUnit.Pokemon);
 
-        partyScreen.Init();
+        partyScreen.Init(); // Pass the party instance
 
         dialogBox.SetMoveNames(playerUnit.Pokemon.Moves);
 
@@ -48,6 +48,7 @@ public class BattleSystem : MonoBehaviour
 
         ActionSelection();
     }
+
 
     private void ActionSelection()
     {
@@ -251,6 +252,7 @@ public class BattleSystem : MonoBehaviour
         // Clamp currentMember to ensure it stays within valid bounds
         currentMember = Mathf.Clamp(currentMember, 0, playerParty.Pokemons.Count - 1);
 
+        // Update selection on the PartyScreen
         partyScreen.UpdateMemberSelection(currentMember);
 
         if (Input.GetKeyDown(KeyCode.Return))
@@ -258,13 +260,13 @@ public class BattleSystem : MonoBehaviour
             var selectedMember = playerParty.Pokemons[currentMember];
             if (selectedMember.HP <= 0)
             {
-                partyScreen.SetMessageText("You can't send out a fainted pokemon");
+                partyScreen.SetMessageText("You can't send out a fainted Pokémon.");
                 return;
             }
 
             if (selectedMember == playerUnit.Pokemon)
             {
-                partyScreen.SetMessageText("You can't switch with the same pokemon");
+                partyScreen.SetMessageText("You can't switch with the same Pokémon.");
                 return;
             }
 
@@ -278,6 +280,7 @@ public class BattleSystem : MonoBehaviour
             ActionSelection();
         }
     }
+
 
     IEnumerator SwitchPokemon(Pokemon newPokemon)
     {

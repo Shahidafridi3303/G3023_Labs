@@ -49,12 +49,12 @@ public class RandomEncounters : MonoBehaviour
                 PokemonParty pokemonParty = GetComponent<PokemonParty>();
                 if (pokemonParty != null)
                 {
-                    Pokemon caughtPokemon = pokeball.GetPokemon(); 
-                    pokemonParty.AddPokemon(caughtPokemon);        
+                    Pokemon caughtPokemon = pokeball.GetPokemon();
+                    pokemonParty.AddPokemon(caughtPokemon);
                     Debug.Log("Pokeball Found and Pokemon added");
                 }
 
-                Destroy(collision.gameObject); 
+                Destroy(collision.gameObject);
             }
         }
     }

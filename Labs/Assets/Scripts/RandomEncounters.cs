@@ -1,8 +1,5 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class RandomEncounters : MonoBehaviour
 {
@@ -15,46 +12,75 @@ public class RandomEncounters : MonoBehaviour
 
     public event Action OnEncountered;
 
+    private Pokeball nearbyPokeball; // Reference to the current Pokeball
+
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
+    }
+
+    private void Update()
+    {
+        if (nearbyPokeball != null && Input.GetKeyDown(KeyCode.E))
+        {
+            PokemonParty pokemonParty = GetComponent<PokemonParty>();
+            if (pokemonParty != null)
+            {
+                Pokemon caughtPokemon = nearbyPokeball.GetPokemon();
+                if (caughtPokemon != null)
+                {
+                    pokemonParty.AddPokemon(caughtPokemon);
+                    Debug.Log($"Caught {caughtPokemon.Base.Name}!");
+                }
+            }
+            Destroy(nearbyPokeball.gameObject);
+            nearbyPokeball = null; // Clear the reference
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision != null)
         {
+            // Handle EncounterArea logic
             EncounterArea encounterZone = collision.GetComponent<EncounterArea>();
-            if (encounterZone != null) // encounter area
+            if (encounterZone != null)
             {
                 if (body.velocity.sqrMagnitude > 0)
                 {
                     distanceTravelledSinceLastEncounter += body.velocity.magnitude * Time.fixedDeltaTime;
 
-                    while(distanceTravelledSinceLastEncounter > minEncounterDistance)
+                    while (distanceTravelledSinceLastEncounter > minEncounterDistance)
                     {
                         distanceTravelledSinceLastEncounter -= minEncounterDistance;
 
                         if (encounterZone.RollEncounter())
                         {
-                            OnEncountered();
+                            OnEncountered?.Invoke();
                         }
                     }
                 }
             }
 
+            // Handle Pokeball logic
             Pokeball pokeball = collision.GetComponent<Pokeball>();
             if (pokeball != null)
             {
-                PokemonParty pokemonParty = GetComponent<PokemonParty>();
-                if (pokemonParty != null)
-                {
-                    Pokemon caughtPokemon = pokeball.GetPokemon();
-                    pokemonParty.AddPokemon(caughtPokemon);
-                    Debug.Log("Pokeball Found and Pokemon added");
-                }
+                nearbyPokeball = pokeball; // Save reference
+                pokeball.Set_UIinfo(true);
+            }
+        }
+    }
 
-                Destroy(collision.gameObject);
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        Pokeball pokeball = collision.GetComponent<Pokeball>();
+        if (pokeball != null)
+        {
+            pokeball.Set_UIinfo(false);
+            if (nearbyPokeball == pokeball)
+            {
+                nearbyPokeball = null; // Clear reference when leaving
             }
         }
     }

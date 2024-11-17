@@ -4,17 +4,9 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    [SerializeField]
-    float moveSpeed = 4;
+    [SerializeField] float moveSpeed = 4;
 
-    [SerializeField]
-    Rigidbody2D rb;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
+    [SerializeField] Rigidbody2D rb;
 
     // Update is called once per frame
     public void HandleUpdate()

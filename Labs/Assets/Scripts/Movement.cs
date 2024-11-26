@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement : MonoBehaviour
+public class Movement : MonoBehaviour, ISavable
 {
     [SerializeField] float moveSpeed = 4;
 
@@ -23,5 +23,17 @@ public class Movement : MonoBehaviour
     public void SetVelocityZero()
     {
         rb.velocity = Vector3.zero;
+    }
+
+    public object CaptureState()
+    {
+        float[] position = new float[] { transform.position.x, transform.position.y };
+        return position;
+    }
+
+    public void RestoreState(object state)
+    {
+        var position = (float[])state;
+        transform.position = new Vector3(position[0], position[1]);
     }
 }

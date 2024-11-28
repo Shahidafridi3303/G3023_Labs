@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 [System.Serializable]
@@ -75,16 +76,7 @@ public class Pokemon
         HP = saveData.hp;
         level = saveData.level;
 
-        // Generate Moves
-        Moves = new List<Move>();
-        foreach (var move in Base.LearnableMoves)
-        {
-            if (move.Level <= Level)
-                Moves.Add(new Move(move.MoveBase));
-
-            if (Moves.Count >= 4)
-                break;
-        }
+        Moves = saveData.moves.Select(s => new Move(s)).ToList();
     }
 
     public PokemonSaveData GetSaveData()
@@ -94,6 +86,7 @@ public class Pokemon
             name = Base.Name,
             hp = HP,
             level = Level,
+            moves = Moves.Select(m => m.GetSaveData()).ToList()
         };
         return saveData;
     }
@@ -130,4 +123,5 @@ public class PokemonSaveData
     public string name;
     public int hp;
     public int level;
+    public List<MoveSaveData> moves;
 }

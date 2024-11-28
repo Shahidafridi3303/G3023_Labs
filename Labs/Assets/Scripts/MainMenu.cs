@@ -5,11 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    private GameController gameController;
-
     private void Start()
     {
-        gameController = FindObjectOfType<GameController>();
+        // Ensure GameManager is instantiated
+        if (GameManager.Instance == null)
+        {
+            GameObject gameManagerObj = new GameObject("GameManager");
+            gameManagerObj.AddComponent<GameManager>();
+        }
     }
 
     public void NewGame()
@@ -19,8 +22,14 @@ public class MainMenu : MonoBehaviour
 
     public void Continue()
     {
-        gameController.LoadGame();
-        SceneManager.LoadScene(1);
+        // Ensure GameManager is instantiated
+        if (GameManager.Instance == null)
+        {
+            Debug.LogError("GameManager is not initialized.");
+            return;
+        }
+
+        GameManager.Instance.ContinueGame();
     }
 
     public void MainMenuScene()
@@ -30,7 +39,7 @@ public class MainMenu : MonoBehaviour
 
     public void Credits()
     {
-
+        // Credits logic here
     }
 
     public void Exit()

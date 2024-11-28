@@ -5,6 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    private GameController gameController;
+
+    private void Start()
+    {
+        gameController = FindObjectOfType<GameController>();
+    }
+
     public void NewGame()
     {
         SceneManager.LoadScene(1);
@@ -12,7 +19,13 @@ public class MainMenu : MonoBehaviour
 
     public void Continue()
     {
+        gameController.LoadGame();
         SceneManager.LoadScene(1);
+    }
+
+    public void MainMenuScene()
+    {
+        SceneManager.LoadScene(0);
     }
 
     public void Credits()
@@ -25,7 +38,7 @@ public class MainMenu : MonoBehaviour
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else
-            Application.Quit();
+        Application.Quit();
 #endif
     }
 }

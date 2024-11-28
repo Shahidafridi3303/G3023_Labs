@@ -10,6 +10,7 @@ public class GameController : MonoBehaviour
     [SerializeField] Movement playerController;
     [SerializeField] RandomEncounters randomEncounters;
     [SerializeField] BattleSystem battleSystem;
+    [SerializeField] GameObject SaveGameButton;
     [SerializeField] Camera worldCamera;
 
     GameState state;
@@ -31,6 +32,7 @@ public class GameController : MonoBehaviour
         state = GameState.Battle;
         playerController.SetVelocityZero();   
         battleSystem.gameObject.SetActive(true);
+        SaveGameButton.SetActive(false);
         worldCamera.gameObject.SetActive(false);
 
         var playerParty = playerController.GetComponent<PokemonParty>();
@@ -45,6 +47,7 @@ public class GameController : MonoBehaviour
     {
         state = GameState.FreeRoam;
         battleSystem.gameObject.SetActive(false);
+        SaveGameButton.SetActive(true);
         worldCamera.gameObject.SetActive(true);
     }
 
@@ -54,19 +57,29 @@ public class GameController : MonoBehaviour
         {
             playerController.HandleUpdate();
 
-            if (Input.GetKeyDown(KeyCode.S))
-            {
-                SavingSystem.i.Save("saveSlot1");
-            }
+            //if (Input.GetKeyDown(KeyCode.S))
+            //{
+            //    SaveGame();
+            //}
 
-            if (Input.GetKeyDown(KeyCode.L))
-            {
-                SavingSystem.i.Load("saveSlot1");
-            }
+            //if (Input.GetKeyDown(KeyCode.L))
+            //{
+            //    SavingSystem.i.Load("saveSlot1");
+            //}
         }
         else if (state == GameState.Battle)
         {
             battleSystem.HandleUpdate();
         }
+    }
+
+    public void LoadGame()
+    {
+        SavingSystem.i.Load("saveSlot1");
+    }
+
+    public void SaveGame()
+    {
+        SavingSystem.i.Save("saveSlot1");
     }
 }

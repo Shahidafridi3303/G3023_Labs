@@ -69,6 +69,35 @@ public class Pokemon
         get { return Mathf.FloorToInt((Base.Speed * Level) / 100f) + 10; }
     }
 
+    public Pokemon(PokemonSaveData saveData)
+    {
+        _base = PokemonDB.GetPokemonByName(saveData.name);
+        HP = saveData.hp;
+        level = saveData.level;
+
+        // Generate Moves
+        Moves = new List<Move>();
+        foreach (var move in Base.LearnableMoves)
+        {
+            if (move.Level <= Level)
+                Moves.Add(new Move(move.MoveBase));
+
+            if (Moves.Count >= 4)
+                break;
+        }
+    }
+
+    public PokemonSaveData GetSaveData()
+    {
+        var saveData = new PokemonSaveData()
+        {
+            name = Base.Name,
+            hp = HP,
+            level = Level,
+        };
+        return saveData;
+    }
+
     public bool TakeDamage(Move move, Pokemon attacker)
     {
         float attack = (move.Base.IsSpecial) ? attacker.SpAttack : attacker.Attack;
@@ -93,4 +122,12 @@ public class Pokemon
         int r = Random.Range(0, Moves.Count);
         return Moves[r];
     }
+}
+
+[System.Serializable]
+public class PokemonSaveData
+{
+    public string name;
+    public int hp;
+    public int level;
 }

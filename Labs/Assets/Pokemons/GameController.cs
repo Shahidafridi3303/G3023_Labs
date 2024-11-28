@@ -14,6 +14,11 @@ public class GameController : MonoBehaviour
 
     GameState state;
 
+    private void Awake()
+    {
+        PokemonDB.Init();
+    }
+
     private void Start()
     {
         randomEncounters.OnEncountered += StartBattle;

@@ -15,6 +15,10 @@ public class PokemonParty : MonoBehaviour
         get {
             return pokemons;
         }
+        set
+        {
+            pokemons = value;
+        }
     }
 
     private void Start()

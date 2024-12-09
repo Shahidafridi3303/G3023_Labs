@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    [SerializeField] private ParticleSystem dust;
     [SerializeField] float moveSpeed = 4;
 
     [SerializeField] Rigidbody2D rb;
@@ -18,10 +19,20 @@ public class Movement : MonoBehaviour
         Vector3 velocity = inputVector * moveSpeed;
 
         rb.velocity = velocity;
+
+        if (velocity.x > 0 || velocity.y > 0 || velocity.x < 0 || velocity.y < 0)
+        {
+            CreateDust();
+        }
     }
 
     public void SetVelocityZero()
     {
         rb.velocity = Vector3.zero;
+    }
+
+    void CreateDust()
+    {
+        dust.Play();
     }
 }

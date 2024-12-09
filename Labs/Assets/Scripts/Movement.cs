@@ -9,11 +9,10 @@ public class Movement : MonoBehaviour
 
     [SerializeField] Rigidbody2D rb;
 
-    private void Start()
+    public void Start()
     {
-        FadeEffect.Instance.StartFadeEffect();
+        FadeManager.Instance.StartFading();
     }
-
     // Update is called once per frame
     public void HandleUpdate()
     {

@@ -40,7 +40,7 @@ public class BattleSystem : MonoBehaviour
 
     public void StartBattle(PokemonParty playerParty, Pokemon wildPokemon)
     {
-        FadeEffect.Instance.StartFadeEffect();
+        FadeManager.Instance.StartFading();
 
         this.playerParty = playerParty;
         this.wildPokemon = wildPokemon;
@@ -232,7 +232,7 @@ public class BattleSystem : MonoBehaviour
 
     public void BattleOver()
     {
-        FadeEffect.Instance.StartFadeEffect();
+        FadeManager.Instance.StartFading();
 
         dialogBox.EnableActionSelector(false);
         OnBattleOver(true);

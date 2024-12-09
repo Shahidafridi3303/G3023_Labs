@@ -9,6 +9,11 @@ public class Movement : MonoBehaviour
 
     [SerializeField] Rigidbody2D rb;
 
+    private void Start()
+    {
+        FadeEffect.Instance.StartFadeEffect();
+    }
+
     // Update is called once per frame
     public void HandleUpdate()
     {
@@ -20,7 +25,7 @@ public class Movement : MonoBehaviour
 
         rb.velocity = velocity;
 
-        if (velocity.x > 0 || velocity.y > 0 || velocity.x < 0 || velocity.y < 0)
+        if (velocity.x != 0 || velocity.y != 0)
         {
             CreateDust();
         }

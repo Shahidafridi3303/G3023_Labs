@@ -8,6 +8,19 @@ public enum BattleState { Start, ActionSelection, MoveSelection, PerformMove, Bu
 
 public class BattleSystem : MonoBehaviour
 {
+    [Header("Particle System Enemy")]
+    [SerializeField] private ParticleSystem Move1;
+    [SerializeField] private ParticleSystem Move2;
+    [SerializeField] private ParticleSystem Move3;
+    [SerializeField] private ParticleSystem Move4;
+
+    [Header("Particle System Player")]
+    [SerializeField] private ParticleSystem Move5;
+    [SerializeField] private ParticleSystem Move6;
+    [SerializeField] private ParticleSystem Move7;
+    [SerializeField] private ParticleSystem Move8;
+
+    [Header("Battle System")]
     [SerializeField] BattleUnit playerUnit;
     [SerializeField] BattleUnit enemyUnit;
     [SerializeField] BattleHud playerHud;
@@ -27,6 +40,8 @@ public class BattleSystem : MonoBehaviour
 
     public void StartBattle(PokemonParty playerParty, Pokemon wildPokemon)
     {
+        FadeEffect.Instance.StartFadeEffect();
+
         this.playerParty = playerParty;
         this.wildPokemon = wildPokemon;
         StartCoroutine(SetupBattle());
@@ -108,6 +123,7 @@ public class BattleSystem : MonoBehaviour
         state = BattleState.PerformMove;
 
         var move = enemyUnit.Pokemon.GetRandomMove();
+        PlayParticleForPlayer();
         move.PP--;
         yield return dialogBox.TypeDialog($"{enemyUnit.Pokemon.Base.Name} used {move.Base.Name}");
 
@@ -135,6 +151,27 @@ public class BattleSystem : MonoBehaviour
         else
         {
             ActionSelection();
+        }
+    }
+
+    public void PlayParticleForPlayer()
+    {
+        int randomMove = UnityEngine.Random.Range(1, 4); 
+
+        switch (randomMove)
+        {
+            case 1:
+                Move5.Play();
+                break;
+            case 2:
+                Move6.Play();
+                break;
+            case 3:
+                Move7.Play();
+                break;
+            case 4:
+                Move8.Play();
+                break;
         }
     }
 
@@ -195,6 +232,8 @@ public class BattleSystem : MonoBehaviour
 
     public void BattleOver()
     {
+        FadeEffect.Instance.StartFadeEffect();
+
         dialogBox.EnableActionSelector(false);
         OnBattleOver(true);
     }
@@ -216,6 +255,7 @@ public class BattleSystem : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Return))
         {
+            PlayParticleForEnemy();
             dialogBox.EnableMoveSelector(false);
             dialogBox.EnableDialogText(true);
             StartCoroutine(PlayerMove());
@@ -223,6 +263,26 @@ public class BattleSystem : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.X))
         {
             BackFromMoveSelection();
+        }
+    }
+
+    public void PlayParticleForEnemy()
+    {
+        Debug.Log(currentMove);
+        switch (currentMove)
+        {
+            case <1:
+                Move1.Play();
+                break;
+            case 1:
+                Move2.Play();
+                break;
+            case 2:
+                Move3.Play();
+                break;
+            case 3:
+                Move4.Play();
+                break;
         }
     }
 
